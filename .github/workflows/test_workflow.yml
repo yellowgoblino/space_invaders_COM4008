@@ -20,20 +20,18 @@ jobs:
     # The type of runner that the job will run on
     runs-on: windows-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Step 1 
+        run: echo "The full invaders array should include the three types of aliens."
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Step 2
+        run: echo "These should move from side to side, and fire at the player at random."
+          
+      - name: Step 3
+        run: echo "Their speed of movement should increase as the invaders are reduced in number (from being shot)."
   
   defender_action:
 
@@ -51,6 +49,20 @@ jobs:
         
         - name: Step 3
           run: echo "Player loses a life and respawns (until run out of lives) when shot by an invader."
+
+  green_barriers:
+
+      runs-on: windows-latest
+
+      steps:
+
+        - uses: actions/checkout@v4
+
+        - name: Requirement
+          run: echo "The four green barriers should diminish every time they are shot by both the invaders and the defender/player."
+
+
+
           
       
   
