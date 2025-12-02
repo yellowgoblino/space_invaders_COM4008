@@ -44,13 +44,13 @@ jobs:
         - uses: actions/checkout@v4
         
         - name: Step 1
-          run: echo The defender (player) should be able to shoot multiple bullets continuously.
+          run: echo "The defender (player) should be able to shoot multiple bullets continuously."
         
         - name: Step 2 
-          run: echo Implement collision detection so that invaders are destroyed when successfully shot by the player
+          run: echo "Implement collision detection so that invaders are destroyed when successfully shot by the player."
         
         - name: Step 3
-          run: echo Player loses a life and respawns (until run out of lives) when shot by an invader.
+          run: echo "Player loses a life and respawns (until run out of lives) when shot by an invader."
           
       
   
